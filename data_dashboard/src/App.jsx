@@ -53,7 +53,7 @@ function App() {
                   performer = {list.events[seat].performers[0].name}
                   cheap = {list.events[seat].stats.lowest_price}
                   expensive = {list.events[seat].stats.highest_price}
-                  listings = {list.events[seat].stats.visible_listing_count} 
+                  listings = {list.events[seat].stats.listing_count} 
                 />
           )
         }
