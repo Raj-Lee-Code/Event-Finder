@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.logo{
+  width: 8vw;
+}
+
+h1 {
+  
+}
+
+ul{
+  list-style-type: none;
+}
+
+.infoCard {
+  margin: 5vh;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+}
+td, th{
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: .25vw;
+  padding-bottom: .25vw;
+}
+table, th, td{
+
+  border: 1px solid white;
+  text-align: center;
+}
+
+.infoDiv{
+  display: flex;
+  justify-content: center;
+}
