@@ -1,4 +1,4 @@
-# Web Development Project 5 - Project 5: Data Dashboard Part 1
+# Web Development Project 6 - Project 6: Data Dashboard Part 2
 
 Submitted by: Rajan Patel
 
