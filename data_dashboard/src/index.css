@@ -13,7 +13,31 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+.detailPage {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+.buttonPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+.sidebarStyle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  background-color: #404040;
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,6 +46,10 @@ a {
 a:hover {
   color: #535bf2;
 }
+.map-container {
+  height: 600px;
+  width: 50vw;
+  }
 
 button {
   border-radius: 8px;
@@ -30,7 +58,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: whitesmoke;
   cursor: pointer;
   transition: border-color 0.25s;
 }
