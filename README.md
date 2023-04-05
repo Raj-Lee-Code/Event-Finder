@@ -2,42 +2,39 @@
 
 Submitted by: Rajan Patel
 
-This web app: This Web app use the SeatGeek API and and shows events happening throughout the US. The events shown, display the type of event (concert, comedy, theater, sporting etc.), the date, time, location, price of the cheapest and most expensive tickets and amount of seats left. The user is also provided the functionality to search for events to a specific city by typing a city into the search bar and searching. The returned results will be events only happening in the provided city.
+This web app: This Web app use the SeatGeek API and and shows events happening throughout the US. The events shown, display the type of event (concert, comedy, theater, sporting etc.), the date, time, location, price of the cheapest and most expensive tickets and amount of seats left. The user is also provided the functionality to search for events to a specific city by typing a city into the search bar and searching. The returned results will be events only happening in the provided city. Updating the web app, I added a button to each event listed which shows more detailed information about the event. The detail view page shows the address of the event, the name of the venue as well as a link to purchase tickets to the specific event. It also features an embedded map showing the location of the even with a marker using Mapbox's API and location information from SeatGeek's API.  
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] The dashboard shows the cheapest tickets, most expensive tickets and amount of tickets available for the event listed
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [ ] **The app includes at least two unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [x] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] When in detailed view page of an event, the location of the event in a embedded map is shown on the page using MapBox's API by using information provided from SeatGeek's API. A Map was added to the page instead of a chart as the information recieved from SeatGeek's API did not feature content that could be transfered into a chart form. Instead, I thought a map with a marker and accessing two different API's together would be better for the project.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./WEB102 Project5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./WEB102 Project6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LiceCap v1.32 (https://www.cockos.com/licecap/)
 
 ## Notes
 
-This project had been more challenging as mounting/updating/removing the component was difficult when trying to apply filters. With the SeatGeek API, 10 results are returned per page for each call. This led to not all data from seatgeek being recieved at once as multiple pages would need to be called for the entire dataset. Instead to filter, the user would input a city and the API would be called as before but this time implementing a city filter in the API call, thus recieving a response to the user's search parameter. I was not able to implement multiple (2+) filters as school/finals had caught up and I ran out of time, but on part two of this project (week 6 project) I plan to expand and implement more features/searches.
+This project had been interesting as I had to transfer information from the API call in the main homepage to the detail view page when a user clicks the button for more info. Within the detail view page of an event, I also included a embedded map on the page with a marker showing the location of the event using Mapbox's API. I also wanted to only call SeatGeek's API as few times as possible (only called once per webpage load) so when going to the detail view page, there is not another call rather information is tranferred from the orginal call on the home page. This project was helpful in learning routing and how to deal with multiple different pages. 
 
 ## License
 
