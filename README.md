@@ -1,6 +1,3 @@
-# Web Development Project 6 - Project 6: Data Dashboard Part 2
-
-Submitted by: Rajan Patel
 
 This web app: This Web app use the SeatGeek API and and shows events happening throughout the US. The events shown, display the type of event (concert, comedy, theater, sporting etc.), the date, time, location, price of the cheapest and most expensive tickets and amount of seats left. The user is also provided the functionality to search for events to a specific city by typing a city into the search bar and searching. The returned results will be events only happening in the provided city. Updating the web app, I added a button to each event listed which shows more detailed information about the event. The detail view page shows the address of the event, the name of the venue as well as a link to purchase tickets to the specific event. It also features an embedded map showing the location of the even with a marker using Mapbox's API and location information from SeatGeek's API.  
 
