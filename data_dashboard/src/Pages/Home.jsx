@@ -9,7 +9,7 @@ function Home(){
   
     const redirect = useNavigate();
     useEffect(() => { const fetchAllSeats = async () => {
-        const response = await fetch(`https://api.seatgeek.com/2/events?listing_count.gt=0&page=1&client_id=MzI2ODczMjh8MTY4MDAyMTQ0Ni40NDQ0MTAz`);
+        const response = await fetch(`https://api.seatgeek.com/2/events?listing_count.gt=0&page=1&client_id=`);  // removed client ID token
         const json = await response.json();
         setList(json);
       
@@ -23,7 +23,7 @@ function Home(){
 
     const handleSubmit = async (e) => {
       e.preventDefault()
-      const response = await fetch(`https://api.seatgeek.com/2/events?listing_count.gt=0&venue.city=${city}&page=1&client_id=MzI2ODczMjh8MTY4MDAyMTQ0Ni40NDQ0MTAz`)
+      const response = await fetch(`https://api.seatgeek.com/2/events?listing_count.gt=0&venue.city=${city}&page=1&client_id=`) // removed client ID token
       const json = await response.json()
       if (json.meta.total === 0) {
         alert(`No events found in ${city}`)

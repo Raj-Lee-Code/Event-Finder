@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl'; 
 
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicmFqYXBhdGVsIiwiYSI6ImNsZzQ2NTE2bDAyYWMza2s5ZXFobXhtMGoifQ._f6iwSKf_RIBd8EwIMa8iw'
+mapboxgl.accessToken = ''  // Token added in working version, currently not here due to security 
 
 const Map = ({lat,lon}) => {
        
